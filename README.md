@@ -21,6 +21,10 @@ Istio components will get installed on Istio-system namespace,to verify run the 
 
 kubectl get pods -n istio-system
 
+For additional add-on's like Monitoring and graph components run the following commend 
+
+kc apply -f ./istio-1.22.0/samples/addons   ===> Relative path refering to the addons in the checked directory 
+
 # Installing the application by running the kubernetes manifest file:
 
 By defualt the application will install at the default name space but in my scenarion i would like to install it on dedicated namespace so i'm creating a namespace called shopping-app
@@ -36,4 +40,8 @@ kubectl label namespace shopping-app istio-injection=enabled --overwrite   ===> 
 # switch to the shopping-app as defualt namespace 
 
 kubectl config set-context --current --namespace shopping-app
+
+Deploy the shopping app by executing the below command:
+
+kubectl apply -f  kubernetes-manifests.yaml
 
