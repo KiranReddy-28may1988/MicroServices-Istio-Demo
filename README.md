@@ -1,6 +1,9 @@
 # MicroServices-Istio-Demo
 Sample micro services app with Istio capabilities like service mesh, Grafana, prometheus,jaeger and Kiali.
 
+![image](https://github.com/KiranReddy-28may1988/MicroServices-Istio-Demo/assets/35845129/a190260d-fa08-4a40-8610-344999ebb944)
+
+
 # pre-requistites:
 If you are doing it on local machine make sure you have either minikube or Docker-Desktop instlled
 
